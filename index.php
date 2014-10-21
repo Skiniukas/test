@@ -1,14 +1,18 @@
 <?php
 
-protected function configureFormFields($formMapper)
-    {
-        $formMapper = 125;
+class test {
 
-        $subject = '';
-        if ($subject) {
-            $selectedChoices = $subject;
-        }
-        else {
-            $selectedChoices = $subject;
-        }
+	protected function configureFormFields($formMapper)
+	{
+		$formMapper = 125;
+
+		$subject = '';
+		if ($subject) {
+			$selectedChoices = $subject;
+		}
+		else {
+			$selectedChoices = $subject;
+		}
+	}	
+	
 }
