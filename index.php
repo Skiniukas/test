@@ -4,15 +4,16 @@ class test {
 
 	protected function configureFormFields($formMapper)
 	{
-		$formMapper = 125;
+		$formMapper = $formMapper ? $formMapper : 125;
 
-		$subject = '';
+		$subject = $formMapper ? $formMapper : '';
 		if ($subject) {
 			$selectedChoices = $subject;
 		}
 		else {
 			$selectedChoices = $subject;
 		}
+        return $selectedChoices;
 	}	
 	
 }
