@@ -1,7 +1,12 @@
 <?php
 
 class test {
-
+	
+	protected function test() 
+	{
+		return "test";	
+	}
+	
 	protected function configureFormFields($formMapper)
 	{
 		$formMapper = $formMapper ? $formMapper : 125;
@@ -14,6 +19,5 @@ class test {
 			$selectedChoices = $subject;
 		}
         return $selectedChoices;
-	}	
-	
+	}
 }
